@@ -1,5 +1,6 @@
 import requests as req
 
+URL = "http://127.0.0.1:3000/api/barcode/"
 while True:
     userinput = input('Please enter a barcode, rpi')
 
@@ -14,8 +15,7 @@ while True:
     if userinput == 'quit':
         break
 
-    resp = req.get('http://127.0.0.1:3000/api/barcode/'+userinput)
+    resp = req.get(URL+userinput)
 
     print(resp.url)
     print(resp.text)
-    print("FAEN")
