@@ -1,8 +1,9 @@
 import requests as req
 
-URL = "http://127.0.0.1:3000/api/barcode/"
+URL = "http://127.0.0.1:5000/handle/api/items/barcode="
+print("De forskjellige strekkodene er : 25949455, og : 2395329")
 while True:
-    userinput = input('Please enter a barcode, rpi')
+    userinput = input('Please enter a barcode: ')
 
     #Trengs ikke
     #result = ''
